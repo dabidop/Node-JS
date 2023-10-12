@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cuerpo">
+      <div class="etiqueta">
+        <h1>REGISTRAR NUEVO DONANTE</h1>
+      </div>
+      <div class="encuesta">
+        <form>
+          <div class="cont">
+            <label>Nombre de donante</label>
+            <input type="text" class="caja" id="nombre">
+          </div>
+          <div class="cont">
+            <label>Número de teléfono</label>
+            <input type="text" class="caja" id="telefono">
+          </div>
+          <div class="cont">
+            <label>Correo electrónico</label>
+            <input type="text" class="caja" id="email">
+          </div>
+          <div class="cont">
+            <label>Tipo de donante</label>
+            <select class="caja" id="tipodonante">
+              <option>Persona natural</option>
+              <option>Persona jurídica</option>
+            </select>
+          </div>
+          <div class="cont">
+            <label>Documento de identidad</label>
+            <input type="text" class="caja" id="docId">
+          </div>
+          <div class="cont">
+            <label>Dirección</label>
+            <input type="text" class="caja" id="direccion">
+          </div>
+          <div class="cont">
+            <label>Entidad asociada</label>
+            <input type="text" class="caja" id="entidadasoc">
+          </div>
+          <div class="cont">
+            <h3>¿El donante es padrino?</h3>
+            <label>SI</label>
+            <input type="checkbox" class="" id="padrino">
+          </div>
+          <div>
+            <button type="button" id="boton" class="cont">ENVIAR</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="donantes.js"></script>
+</body>
+</html>
+
+<style>
+  .cuerpo {
+    background-color: rgb(233, 238, 215);
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .encuesta {
+    display: flex;
+    justify-content: center;
+  }
+  .etiqueta {
+    display: flex;
+    justify-content: center;
+  }
+  .cont {
+    margin-top: 35px;
+    font-family: 'Young Serif', serif;
+  }
+  .caja {
+    width: 300px;
+    display: flex;
+    margin-top: 5px;
+    
+  }
+  h1 {
+    font-family: 'Young Serif', serif;
+  }
+</style>

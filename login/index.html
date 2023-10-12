@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <form>
+        Usuario
+        <input type="text" id="user">
+        Contraseña
+        <input type="text" id="password">
+        <button type="button" id="button">Iniciar sesión</button>
+    </form>
+    <h2>Hay 5 usuarios y 5 contraseñas:</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Usuarios</th>
+                    <th>Contraseñas</th>
+                </tr>
+            </thead>
+                <td>user1</td><td>pass1</td>
+                <tr><td>user2</td><td>pass2</td></tr>
+                <tr><td>user3</td><td>pass3</td></tr>
+                <tr><td>user4</td><td>pass4</td></tr>
+                <tr><td>user5</td><td>pass5</td></tr>
+            <tbody id="contenido"></tbody>
+        </table>
+    <script src="login.js"></script>
+</body>
+</html>
